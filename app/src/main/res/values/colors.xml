@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--nav header-->
+    <color name="header_title">#030202</color>
+    <color name="header_description">#201b1b</color>
+    <color name="green">#a8cf45</color>
+    <color name="colorScreenWelcome">#1597D1</color>
+    <color name="color_Text_help">#000000</color>
+    <color name="color_text_date">#042d96</color>
+    <color name="color_black_text">#fd000000</color>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_item_profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/text_item_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_item_profile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/image_item_profile"
+            android:layout_toRightOf="@+id/image_item_profile"
+            android:text="@string/string_fullname"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_item_year_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_item_fullname"
+            android:layout_alignStart="@+id/text_item_fullname"
+            android:layout_below="@+id/text_item_fullname"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/string_year_birth" />
+
+        <TextView
+            android:id="@+id/text_item_place_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_item_year_birth"
+            android:layout_alignStart="@+id/text_item_year_birth"
+            android:layout_below="@+id/text_item_year_birth"
+            android:layout_marginTop="7dp"
+            android:text="@string/string_place_birth"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_below="@+id/text_item_place_birth"
+            android:background="#030202"
+            android:layout_marginTop="6dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

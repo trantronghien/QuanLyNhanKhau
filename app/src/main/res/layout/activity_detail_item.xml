@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.it.hientran.tracuunhankhau.activity.DetailItemActivity">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_detail_profile"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_profile_male"
+    />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/text_detail_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_black_text"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="65dp"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/text_detail_yearbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_detail_fullname"
+                android:layout_marginTop="20dp"
+                android:text="@string/string_detail_yearbirth" />
+
+            <TextView
+                android:id="@+id/text_detail_cmnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/string_detail_cmnd"
+                android:layout_below="@+id/text_detail_yearbirth"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/text_detail_placebirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_detail_placebirth"
+                android:layout_below="@+id/text_detail_cmnd"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+
+
+            <TextView
+                android:id="@+id/text_detail_job"
+                android:text="@string/string_detail_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_detail_placebirth"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:id="@+id/text_detail_religion"
+                android:text="@string/string_detail_religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/text_detail_job"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/text_detail_status"
+                android:text="@string/string_detail_status"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/text_detail_religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/text_detail_node"
+                android:text="@string/string_detail_node"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_detail_status"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>
